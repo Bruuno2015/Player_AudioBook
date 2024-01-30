@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player AudioBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container-aplicativo">
+        <img id="capa" src="./images/dom-casmurro.jpeg" alt="Capa do Livro">
+        <div id="informacoes-faixa">
+            <div id="capitulo"> Capítulo 1 </div>
+            <div id="nome-autor"> Machado de Assis </div>
+        </div>
+        <audio id="audio-capitulo" src="./books/dom-casmurro/1.mp3"></audio>
+        <div id="container-botoes">
+            <button id="anterior" class="bi bi-skip-start-fill"></button>
+            <button id="play-pause" class="bi bi-play-circle-fill"></button>
+            <button id="proximo" class="bi bi-skip-end-fill"></button>
+        </div>
+    </div>
+    <input type="text" id="inputAudio" placeholder="URL do Áudio">
+    <input type="text" id="inputImagem" placeholder="URL da Imagem">
+    <button onclick="adicionarAudio()">Adicionar à Lista</button>
+</body>
+<script src="script.js"></script>
+<script src="adicionar_audiobook.js"></script>
+
+</html>
